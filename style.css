@@ -142,6 +142,7 @@ html {
 /* About Me */
 .aboutme {
   z-index: 3;
+  top: 40px; 
 }
 
 .myImg {
@@ -265,7 +266,7 @@ html {
 /* Skills */
 
 .skill,.projects {
-  margin-top: 5%;
+  margin-top: 10%; 
   position: relative;
   color: white;
   z-index: 3;

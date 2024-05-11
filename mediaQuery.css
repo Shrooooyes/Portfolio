@@ -1,39 +1,9 @@
 @media only screen and (max-width: 900px) {
-  body {
-    width: 100%;
-    overflow: hidden;
-  }
-
   .Navbar {
     top: 2%;
     position: fixed;
     z-index: 999;
     width: 100%;
-  }
-
-  .active_background {
-    background-image: radial-gradient(
-      circle at top left,
-      rgb(48, 48, 48) 0%,
-      rgb(48, 48, 48) 8%,
-      rgb(46, 46, 46) 8%,
-      rgb(46, 46, 46) 57%,
-      rgb(43, 43, 43) 57%,
-      rgb(43, 43, 43) 65%,
-      rgb(41, 41, 41) 65%,
-      rgb(41, 41, 41) 67%,
-      rgb(39, 39, 39) 67%,
-      rgb(39, 39, 39) 72%,
-      rgb(36, 36, 36) 72%,
-      rgb(36, 36, 36) 80%,
-      rgb(34, 34, 34) 80%,
-      rgb(34, 34, 34) 100%
-    );
-    z-index: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
   }
 
   .items {
@@ -51,24 +21,31 @@
 
   .title {
     width: 70%;
+    top: -15vh;
   }
   .container {
     margin-top: 17%;
-   }
+  }
 
   /* About me */
   .mySec {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
   }
 
-  .myImg::before,.myImg {
+  .myImg::before,
+  .myImg {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .myImg{
+  .myImg {
     margin-bottom: 20px;
+  }
+
+
+  .projects {
+    margin-top: 25%;
   }
 }
 
@@ -76,23 +53,14 @@
   .skl {
     flex-wrap: wrap;
     justify-content: center;
-    row-gap: 30px; 
+    row-gap: 30px;
   }
   .proj_title {
-    top: -10vh; 
-   }
-   
+    top: -10vh;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  /* .Navbar {
-    top: 2%;
-    position: fixed;
-    z-index: 999;
-    width: 50%;
-  } */
-
-
   .fa-solid {
     font-size: 2.5em;
     margin: 0;
@@ -113,12 +81,9 @@
     margin-top: 0.2em;
   }
 
-  .content{
-    width: 200%;
-  }
-
   .title {
     width: 100%;
+    top: -12vh;
   }
   .one {
     font-size: 4em;
@@ -129,7 +94,7 @@
     font-size: 1.8em;
   }
 
-  .hello{
+  .hello {
     font-size: 2.6em;
   }
 
@@ -141,30 +106,37 @@
     flex-direction: column;
   }
 
-  .cv, .social {
+  .cv,
+  .social {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .card .img{
-    width: 50vh; 
-    height: 30vh; 
+  .card .img {
+    width: 50vh;
+    height: 30vh;
   }
-  
-  .height img{
-    height: 85%;  
+
+  .height img {
+    height: 85%;
     margin-left: 4%;
     margin-top: 5%;
   }
-  
+
   .width img {
     width: 70%;
     margin-left: 15%;
     margin-top: 4%;
   }
-} 
+
+  .skill {
+    margin-top: 20%;
+  }
+}
 
 @media only screen and (max-width: 450px) {
+  
+  
   .hello {
     font-size: 2em;
   }
@@ -206,5 +178,10 @@
 
   .mfg {
     margin-left: auto;
+  }
+
+
+  .projects {
+    margin-top: 50%;  
   }
 }
