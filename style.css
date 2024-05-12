@@ -94,6 +94,10 @@ html {
   width: 100%;
 }
 
+.Navbar2 {
+  display: none;
+}
+
 .items {
   margin-top: 10px;
   margin-left: auto;

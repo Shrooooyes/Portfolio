@@ -43,7 +43,6 @@
     margin-bottom: 20px;
   }
 
-
   .projects {
     margin-top: 25%;
   }
@@ -61,24 +60,93 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .fa-solid {
-    font-size: 2.5em;
-    margin: 0;
-    margin-top: 0.2em;
+  .Navbar {
+    display: none;
   }
 
-  .items {
+  .Navbar2 {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    display: block;
+    background-color: rgb(255, 68, 0);
+    top: 0;
     height: 4em;
   }
 
-  .fa-code {
-    margin: 0.6em;
+  .Navbar2 button {
+    background-color: transparent;
+    border: none;
+
+    position: relative;
+    float: right;
+    right: 20px; 
+    align-items: center;
   }
 
-  .items .fa-solid:hover {
-    font-size: 2.8em;
-    margin: 0;
-    margin-top: 0.2em;
+  .Navbar2 i {
+    font-size: 3em;
+    margin-top: 0.3em;
+  }
+
+  .items2 {
+    top: 0;
+    display: block;
+    position: fixed;
+    z-index: 100000;
+    background-image: radial-gradient(
+      circle at top left,
+      rgb(48, 48, 48) 0%,
+      rgb(48, 48, 48) 8%,
+      rgb(46, 46, 46) 8%,
+      rgb(46, 46, 46) 57%,
+      rgb(43, 43, 43) 57%,
+      rgb(43, 43, 43) 65%,
+      rgb(41, 41, 41) 65%,
+      rgb(41, 41, 41) 67%,
+      rgb(39, 39, 39) 67%,
+      rgb(39, 39, 39) 72%,
+      rgb(36, 36, 36) 72%,
+      rgb(36, 36, 36) 80%,
+      rgb(34, 34, 34) 80%,
+      rgb(34, 34, 34) 100%
+    );
+
+    width: 0; 
+    height: 100%;
+    overflow-x: hidden;
+    transition: all ease 0.6s;
+  }
+
+  .nav {
+    width: fit-content; 
+    position: relative;
+    display:  flex;
+    flex-direction: column;
+    row-gap: 2em;
+
+    top: 10%; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .items2 button {
+    background-color: transparent;
+    border: none;
+
+    position: relative;
+    left: 70%;
+  }
+
+  .items2 i{
+    color: rgb(255, 68, 0);
+    font-size: 3em;
   }
 
   .title {
@@ -135,8 +203,6 @@
 }
 
 @media only screen and (max-width: 450px) {
-  
-  
   .hello {
     font-size: 2em;
   }
@@ -144,17 +210,17 @@
     font-size: 3em;
   }
 
-  .card .img{
-    width: 40vh; 
-    height: 25vh; 
+  .card .img {
+    width: 40vh;
+    height: 25vh;
   }
-  
-  .height img{
-    height: 85%;  
-    margin-left: 3%; 
+
+  .height img {
+    height: 85%;
+    margin-left: 3%;
     margin-top: 5%;
   }
-  
+
   .width img {
     width: 70%;
     margin-left: 15%;
@@ -165,23 +231,22 @@
   }
 
   .container {
-    margin-top: 22%;  
-   }
+    margin-top: 22%;
+  }
 
-   .email {
+  .email {
     position: relative;
-    width: 50%; 
-    margin-top: 3%; 
+    width: 50%;
+    margin-top: 3%;
     margin-left: auto;
-    margin-right: auto; 
-  } 
+    margin-right: auto;
+  }
 
   .mfg {
     margin-left: auto;
   }
 
-
   .projects {
-    margin-top: 50%;  
+    margin-top: 50%;
   }
 }
